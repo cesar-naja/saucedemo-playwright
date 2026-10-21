@@ -1,0 +1,31 @@
+- generic [ref=f5e259]:
+  - generic [ref=f5e260]:
+    - banner [ref=f5e261]:
+      - generic [ref=f5e262]:
+        - generic [ref=f5e263]:
+          - button "Open Menu" [ref=f5e264] [cursor=pointer]
+          - img "Open Menu" [ref=f5e265]
+        - generic [ref=f5e266]: Swag Labs
+        - button "Cart, 2 items" [ref=f5e269]:
+          - generic [ref=f5e270]: "2"
+      - button "Back to products" [ref=f5e273] [cursor=pointer]
+    - main [ref=f5e274]:
+      - generic [ref=f5e276]:
+        - img "Sauce Labs Bike Light" [ref=f5e278]
+        - generic [ref=f5e279]:
+          - generic [ref=f5e280]: Sauce Labs Bike Light
+          - generic [ref=f5e281]: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.
+          - generic [ref=f5e282]: $9.99
+          - button "Remove" [ref=f5e283] [cursor=pointer]
+  - contentinfo [ref=f5e284]:
+    - list [ref=f5e285]:
+      - listitem [ref=f5e286]:
+        - link "X" [ref=f5e287] [cursor=pointer]:
+          - /url: https://x.com/saucelabs
+      - listitem [ref=f5e288]:
+        - link "Facebook" [ref=f5e289] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=f5e290]:
+        - link "LinkedIn" [ref=f5e291] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=f5e292]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy

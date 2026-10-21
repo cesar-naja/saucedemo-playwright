@@ -1,0 +1,98 @@
+- generic [ref=f7e176]:
+  - generic [ref=f7e177]:
+    - banner [ref=f7e178]:
+      - generic [ref=f7e179]:
+        - generic [ref=f7e180]:
+          - button "Open Menu" [ref=f7e181] [cursor=pointer]
+          - img "Open Menu" [ref=f7e182]
+        - generic [ref=f7e183]: Swag Labs
+        - button "Cart, empty" [ref=f7e186]
+      - generic [ref=f7e187]:
+        - generic [ref=f7e188]: Products
+        - generic [ref=f7e190] [cursor=pointer]:
+          - generic [ref=f7e191]: Name (A to Z)
+          - combobox "Sort products" [ref=f7e192]:
+            - option "Name (A to Z)" [selected]
+            - option "Name (Z to A)"
+            - option "Price (low to high)"
+            - option "Price (high to low)"
+    - main [ref=f7e193]:
+      - generic [ref=f7e196]:
+        - generic [ref=f7e197]:
+          - button "View details for Sauce Labs Backpack" [ref=f7e199] [cursor=pointer]:
+            - img "Sauce Labs Backpack" [ref=f7e200]
+          - generic [ref=f7e201]:
+            - generic [ref=f7e202]:
+              - button "View details for Sauce Labs Backpack" [ref=f7e203] [cursor=pointer]:
+                - generic [ref=f7e204]: Sauce Labs Backpack
+              - generic [ref=f7e205]: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+            - generic [ref=f7e206]:
+              - generic [ref=f7e207]: $29.99
+              - button "Add to cart" [ref=f7e208] [cursor=pointer]
+        - generic [ref=f7e209]:
+          - button "View details for Sauce Labs Bike Light" [ref=f7e211] [cursor=pointer]:
+            - img "Sauce Labs Bike Light" [ref=f7e212]
+          - generic [ref=f7e213]:
+            - generic [ref=f7e214]:
+              - button "View details for Sauce Labs Bike Light" [ref=f7e215] [cursor=pointer]:
+                - generic [ref=f7e216]: Sauce Labs Bike Light
+              - generic [ref=f7e217]: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.
+            - generic [ref=f7e218]:
+              - generic [ref=f7e219]: $9.99
+              - button "Add to cart" [ref=f7e220] [cursor=pointer]
+        - generic [ref=f7e221]:
+          - button "View details for Sauce Labs Bolt T-Shirt" [ref=f7e223] [cursor=pointer]:
+            - img "Sauce Labs Bolt T-Shirt" [ref=f7e224]
+          - generic [ref=f7e225]:
+            - generic [ref=f7e226]:
+              - button "View details for Sauce Labs Bolt T-Shirt" [ref=f7e227] [cursor=pointer]:
+                - generic [ref=f7e228]: Sauce Labs Bolt T-Shirt
+              - generic [ref=f7e229]: Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.
+            - generic [ref=f7e230]:
+              - generic [ref=f7e231]: $15.99
+              - button "Add to cart" [ref=f7e232] [cursor=pointer]
+        - generic [ref=f7e233]:
+          - button "View details for Sauce Labs Fleece Jacket" [ref=f7e235] [cursor=pointer]:
+            - img "Sauce Labs Fleece Jacket" [ref=f7e236]
+          - generic [ref=f7e237]:
+            - generic [ref=f7e238]:
+              - button "View details for Sauce Labs Fleece Jacket" [ref=f7e239] [cursor=pointer]:
+                - generic [ref=f7e240]: Sauce Labs Fleece Jacket
+              - generic [ref=f7e241]: It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.
+            - generic [ref=f7e242]:
+              - generic [ref=f7e243]: $49.99
+              - button "Add to cart" [ref=f7e244] [cursor=pointer]
+        - generic [ref=f7e245]:
+          - button "View details for Sauce Labs Onesie" [ref=f7e247] [cursor=pointer]:
+            - img "Sauce Labs Onesie" [ref=f7e248]
+          - generic [ref=f7e249]:
+            - generic [ref=f7e250]:
+              - button "View details for Sauce Labs Onesie" [ref=f7e251] [cursor=pointer]:
+                - generic [ref=f7e252]: Sauce Labs Onesie
+              - generic [ref=f7e253]: Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.
+            - generic [ref=f7e254]:
+              - generic [ref=f7e255]: $7.99
+              - button "Add to cart" [ref=f7e256] [cursor=pointer]
+        - generic [ref=f7e257]:
+          - button "View details for Test.allTheThings() T-Shirt (Red)" [ref=f7e259] [cursor=pointer]:
+            - img "Test.allTheThings() T-Shirt (Red)" [ref=f7e260]
+          - generic [ref=f7e261]:
+            - generic [ref=f7e262]:
+              - button "View details for Test.allTheThings() T-Shirt (Red)" [ref=f7e263] [cursor=pointer]:
+                - generic [ref=f7e264]: Test.allTheThings() T-Shirt (Red)
+              - generic [ref=f7e265]: This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.
+            - generic [ref=f7e266]:
+              - generic [ref=f7e267]: $15.99
+              - button "Add to cart" [ref=f7e268] [cursor=pointer]
+  - contentinfo [ref=f7e269]:
+    - list [ref=f7e270]:
+      - listitem [ref=f7e271]:
+        - link "X" [ref=f7e272] [cursor=pointer]:
+          - /url: https://x.com/saucelabs
+      - listitem [ref=f7e273]:
+        - link "Facebook" [ref=f7e274] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=f7e275]:
+        - link "LinkedIn" [ref=f7e276] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=f7e277]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy

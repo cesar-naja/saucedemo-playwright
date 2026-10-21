@@ -1,0 +1,49 @@
+- generic [ref=f5e396]:
+  - generic [ref=f5e397]:
+    - banner [ref=f5e398]:
+      - generic [ref=f5e399]:
+        - generic [ref=f5e400]:
+          - button "Open Menu" [ref=f5e401] [cursor=pointer]
+          - img "Open Menu" [ref=f5e402]
+        - generic [ref=f5e403]: Swag Labs
+        - button "Cart, 2 items" [ref=f5e406]:
+          - generic [ref=f5e407]: "2"
+      - generic [ref=f5e408]: Your Cart
+    - main [ref=f5e410]:
+      - generic [ref=f5e411]:
+        - generic [ref=f5e412]:
+          - generic [ref=f5e413]: QTY
+          - generic [ref=f5e414]: Description
+          - generic [ref=f5e415]:
+            - generic [ref=f5e416]: "1"
+            - generic [ref=f5e417]:
+              - button "View details for Sauce Labs Bike Light" [ref=f5e418] [cursor=pointer]:
+                - generic [ref=f5e419]: Sauce Labs Bike Light
+              - generic [ref=f5e420]: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.
+              - generic [ref=f5e421]:
+                - generic [ref=f5e422]: $9.99
+                - button "Remove" [ref=f5e423] [cursor=pointer]
+          - generic [ref=f5e424]:
+            - generic [ref=f5e425]: "1"
+            - generic [ref=f5e426]:
+              - button "View details for Test.allTheThings() T-Shirt (Red)" [ref=f5e427] [cursor=pointer]:
+                - generic [ref=f5e428]: Test.allTheThings() T-Shirt (Red)
+              - generic [ref=f5e429]: This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.
+              - generic [ref=f5e430]:
+                - generic [ref=f5e431]: $15.99
+                - button "Remove" [ref=f5e432] [cursor=pointer]
+        - generic [ref=f5e433]:
+          - button "Continue Shopping" [ref=f5e434] [cursor=pointer]
+          - button "Checkout" [ref=f5e435] [cursor=pointer]
+  - contentinfo [ref=f5e436]:
+    - list [ref=f5e437]:
+      - listitem [ref=f5e438]:
+        - link "X" [ref=f5e439] [cursor=pointer]:
+          - /url: https://x.com/saucelabs
+      - listitem [ref=f5e440]:
+        - link "Facebook" [ref=f5e441] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=f5e442]:
+        - link "LinkedIn" [ref=f5e443] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=f5e444]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
