@@ -26,4 +26,8 @@ export class ProductDetailsPage extends BasePage {
     async backToProducts() {
         await this.backToProductsButton.click();
     }
+
+    async clickAddToCartButton(){
+        await this.addToCartButton.click();
+    }
 }

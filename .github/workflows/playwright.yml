@@ -4,6 +4,11 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
+  schedule:
+    - cron: '15 9 * * 1-5'
+      timezone: 'America/Chicago'
+          
 jobs:
   test:
     timeout-minutes: 60
