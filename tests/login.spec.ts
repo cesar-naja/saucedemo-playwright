@@ -11,4 +11,5 @@ test('User can login to the application', async ({ page }) => {
     await expect(page).toHaveTitle(/Swag Labs/);
     await loginPage.swagLabsHeaderIsVisible();
     await loginPage.login(users.standard, PASSWORD);
+    await expect(page).toHaveURL(/inventory/);
 })  
