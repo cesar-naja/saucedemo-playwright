@@ -14,7 +14,7 @@ Under **Secrets**, add:
 Under **Variables**, add:
 
 - `CONFLUENCE_API_BASE`: `https://cesarnaja.atlassian.net` for an API token without scopes. Do not include `/wiki`.
-- `CONFLUENCE_PAGE_ID`: `163939` (verified from the edit link on your Overview page). The short link is `https://cesarnaja.atlassian.net/wiki/x/Y4AC`.
+- `CONFLUENCE_PAGE_ID`: `950273`, the dedicated **SauceDemo — Test Automation & Results** page: `https://cesarnaja.atlassian.net/wiki/x/AYAO`. Your personal Overview page (`163939`) is reserved for your biography and is no longer the reporting destination.
 
 For a **scoped** API token, instead use `https://api.atlassian.com/ex/confluence/YOUR_CLOUD_ID` as `CONFLUENCE_API_BASE`. The token needs `read:page:confluence` and `write:page:confluence`. The account must also be able to view and edit the page and its space. Your cloud ID can be found by opening `https://cesarnaja.atlassian.net/_edge/tenant_info` while signed in. Create tokens in [Atlassian account security](https://id.atlassian.com/manage-profile/security/api-tokens); choose an expiration and rotate the GitHub secret when needed.
 
