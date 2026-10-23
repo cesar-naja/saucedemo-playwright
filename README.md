@@ -27,6 +27,8 @@ The suite covers the logged-in inventory page of Sauce Demo: page contents, cart
 
 ## Getting started
 
+For automatic results on Confluence, see [Confluence setup and five-day retention](docs/confluence-setup.md).
+
 Requires [Node.js](https://nodejs.org/) (LTS) and npm.
 
 ```bash

@@ -4,16 +4,23 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-
+  workflow_dispatch:
   schedule:
     - cron: '15 9 * * 1-5'
       timezone: 'America/Chicago'
-          
+permissions:
+  contents: read
+
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    outputs:
+      started_at: ${{ steps.clock.outputs.started_at }}
     steps:
+    - name: Record run start
+      id: clock
+      run: echo "started_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
@@ -30,3 +37,47 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Save machine-readable results
+      uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}
+      with:
+        name: playwright-json
+        path: test-results/results.json
+        retention-days: 5
+        if-no-files-found: warn
+
+  publish-confluence:
+    needs: test
+    if: >-
+      ${{ always() && !cancelled() && needs.test.result != 'cancelled' &&
+          github.event_name != 'pull_request' &&
+          github.ref_name == github.event.repository.default_branch &&
+          vars.CONFLUENCE_PAGE_ID != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    concurrency:
+      group: confluence-results
+      cancel-in-progress: false
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: Download JSON results
+      uses: actions/download-artifact@v4
+      continue-on-error: true # Installation failures may produce no report; publish an execution failure.
+      with:
+        name: playwright-json
+        path: test-results
+    - name: Update Confluence results
+      run: node scripts/publish-confluence.mjs
+      env:
+        CONFLUENCE_API_BASE: ${{ vars.CONFLUENCE_API_BASE }}
+        CONFLUENCE_PAGE_ID: ${{ vars.CONFLUENCE_PAGE_ID }}
+        CONFLUENCE_EMAIL: ${{ secrets.CONFLUENCE_EMAIL }}
+        CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
+        TEST_JOB_RESULT: ${{ needs.test.result }}
+        RUN_STARTED_AT: ${{ needs.test.outputs.started_at }}
